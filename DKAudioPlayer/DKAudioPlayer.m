@@ -245,6 +245,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
         self.isBubbleViewVisible = YES;
         [self updatePlayButtonImage];
         [self.delegate didTapPauseOrStop];
+        _audioPlayer.currentTime = 0;
     }
 }
 
