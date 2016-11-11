@@ -81,6 +81,8 @@
 
 - (void)stop;
 
+- (BOOL)isPlaying;
+
 - (void)dismiss;
 
 // Use these methods to show or hide player

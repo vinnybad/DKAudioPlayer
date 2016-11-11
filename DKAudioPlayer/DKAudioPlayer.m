@@ -248,6 +248,11 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     }
 }
 
+- (BOOL)isPlaying
+{
+    return _audioPlayer.isPlaying;
+}
+
 - (void)play
 {
     if (! _audioPlayer.isPlaying) {
