@@ -48,11 +48,15 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+@protocol DKAudioPlayerDelegate;
+
 @interface DKAudioPlayer : UIView <AVAudioPlayerDelegate>
 
 @property (nonatomic, strong) NSString *audioFilePath;
 @property (nonatomic, strong) UIViewController *parentViewController;
 @property (nonatomic) BOOL isVisible;
+
+@property (nonatomic, weak) id<DKAudioPlayerDelegate> delegate;
 
 // TODO: here are some problems with blinking of a bubble
 @property (nonatomic) BOOL isBubbleViewVisible;
@@ -84,4 +88,9 @@
 
 -(void) setVolume:(float)volume;
 
+@end
+
+@protocol DKAudioPlayerDelegate <NSObject>
+- (void)didTapPlay;
+- (void)didTapPauseOrStop;
 @end

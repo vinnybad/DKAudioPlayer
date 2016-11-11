@@ -230,9 +230,11 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
 {
     if (_audioPlayer.isPlaying) {
         [self pause];
+        [self.delegate didTapPauseOrStop];
     }
     else {
         [self play];
+        [self.delegate didTapPlay];
     }
 }
 
