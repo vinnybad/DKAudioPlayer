@@ -79,6 +79,8 @@
 // Use this method to pause playing audio programmatically
 - (void)pause;
 
+- (void)stop;
+
 - (void)dismiss;
 
 // Use these methods to show or hide player
