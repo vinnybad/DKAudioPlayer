@@ -384,6 +384,11 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     _bubbleView.hidden = ! isBubbleViewVisible;
 }
 
+- (NSInteger)currentTime
+{
+    return (NSInteger)_audioPlayer.currentTime;
+}
+
 - (NSString *) calculateCurrentDuration
 {
     long currentPlaybackTime = _audioPlayer.currentTime;

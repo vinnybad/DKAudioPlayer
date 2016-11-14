@@ -92,6 +92,8 @@
 
 -(void) setVolume:(float)volume;
 
+- (NSInteger)currentTime;
+
 @end
 
 @protocol DKAudioPlayerDelegate <NSObject>
