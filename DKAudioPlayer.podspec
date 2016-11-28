@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.social_media_url = "http://twitter.com/wzbozon"
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
-  s.source       = { :git => "https://github.com/wzbozon/DKAudioPlayer.git", :tag => "1.1.2" }
+  s.source       = { :git => "https://github.com/vinnybad/DKAudioPlayer.git" }
   s.source_files  = 'DKAudioPlayer/*.{h,m}'
   s.resources = "DKAudioPlayer/Assets/*.png"
   s.requires_arc = true
